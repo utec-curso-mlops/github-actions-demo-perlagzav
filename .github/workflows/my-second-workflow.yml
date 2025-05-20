@@ -12,7 +12,6 @@ jobs:
           python-version: 3.12
       - name: Test model
         run: echo "Test model"
-
   second-job:
     needs: first-job
     runs-on: ubuntu-latest
@@ -25,7 +24,6 @@ jobs:
           python-version: 3.12
       - name: Deploy model
         run: echo "Deploy model to AWS"
-
   third-job:
     needs: second-job
     runs-on: ubuntu-latest
